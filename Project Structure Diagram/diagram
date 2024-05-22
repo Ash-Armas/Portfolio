@@ -1,0 +1,21 @@
+my-project
+├── public
+│   ├── index.html
+│   └── background.jpg
+├── src
+│   ├── components
+│   │   ├── Header.js
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   ├── Projects.js
+│   │   └── Contact.js
+│   ├── styles
+│   │   ├── Home.css
+│   │   ├── About.css
+│   │   ├── Projects.css
+│   │   ├── Contact.css
+│   │   └── Header.css
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+└── package.json
