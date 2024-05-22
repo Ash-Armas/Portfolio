@@ -1,0 +1,77 @@
+/* src/components/Contact.css */
+
+/* Page container */
+.page-container.contact-container {
+  padding: 20px;
+  max-width: 600px; /* Adjusted maximum width */
+  margin: 120px auto 20px auto;
+  background: linear-gradient(to bottom, #87CEEB, #FFFF00); /* Sea and sunlight gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.page-container.contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* White text color */
+}
+
+/* Form */
+.page-container.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form labels */
+.page-container.contact-container form label {
+  color: #FFFFFF; /* White text color */
+  margin-bottom: 5px; /* Reduced margin */
+  /* margin-left: 10%; */
+  margin-right: 10%;
+
+}
+
+/* Form inputs */
+.page-container.contact-container form input,
+.page-container.contact-container form textarea {
+  width: calc(100% - 100px); /* Adjusted width */
+  padding: 10px;
+  margin-bottom: 15px; /* Reduced margin */
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #000000; /* Black text color */
+}
+
+.page-container.contact-container form input{
+  margin-left: 5%;
+}
+
+/* Form textarea */
+.page-container.contact-container form textarea {
+  position: relative;
+  height: 100px; /* Reduced height */
+  resize: none;
+  margin-left: 12%;
+}
+
+/* Submit button */
+.page-container.contact-container form button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFD700; /* Gold color for glossy button */
+  color: #FFFFFF; /* White text color */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for submit button */
+.page-container.contact-container form button[type="submit"]:hover {
+  background-color: #FFB90F; /* Lighter gold color on hover */
+}

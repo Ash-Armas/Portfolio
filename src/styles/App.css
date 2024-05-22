@@ -1,39 +1,26 @@
+/* src/App.css */
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
 }
 
-header, footer {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
+.page-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 80px auto 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-container h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-div {
-  padding: 2rem;
-}
-
-@media (max-width: 600px) {
-  nav ul li {
-    display: block;
-    margin: 1rem 0;
-  }
+.page-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }

@@ -1,0 +1,53 @@
+/* src/components/Page.css */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .page-content {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+  }
+  
+  .corner-button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .home-button {
+    background-color: red;
+    top: -40px;
+    left: -40px;
+  }
+  
+  .about-button {
+    background-color: green;
+    top: -40px;
+    right: -40px;
+  }
+  
+  .projects-button {
+    background-color: blue;
+    bottom: -40px;
+    left: -40px;
+  }
+  
+  .contact-button {
+    background-color: yellow;
+    bottom: -40px;
+    right: -40px;
+  }
+  

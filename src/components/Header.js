@@ -1,17 +1,29 @@
-import React from 'react';
+// src/components/Header.js
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
 
-const Header = () => (
-  <header>
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
-  </header>
-);
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <header>
+      <div className="logo"></div>
+      <nav className={isOpen ? "nav open" : "nav"}>
+        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+        <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
+        <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+      </nav>
+      <div className="menu-icon" onClick={toggleMenu}>
+        &#9776;
+      </div>
+    </header>
+  );
+}
 
 export default Header;
